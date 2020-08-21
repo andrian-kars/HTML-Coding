@@ -1,0 +1,131 @@
+.logo {
+	display: flex;
+	margin-bottom: 137px;
+	
+	@media only screen and (min-width : 768px) {
+		margin-bottom: 186px;
+	}
+
+	@media only screen and (min-width : 1200px) {
+		margin-bottom: 299px;
+	}
+}
+
+.logo__img {
+	height: 24px;
+	margin: 0 auto;
+	
+	@media only screen and (min-width : 768px) {
+		height: auto;
+		margin: 0;
+	}
+}
+
+.logo__text {
+	display: none;
+	margin-left: auto;
+	padding-top: 10px;
+  	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	font-weight: 300;
+	
+	@media only screen and (min-width : 768px) {
+		display: inline;
+	}
+}
+
+.slogan {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	margin-bottom: 96px;
+	
+	@media only screen and (min-width : 480px) {
+		text-align: center;
+	}
+	
+	@media only screen and (min-width : 768px) {
+		padding-left: 65px;
+		padding-right: 65px;
+		margin-bottom: 153px;
+		font-size: 64px;
+		letter-spacing: 3.3px;
+		text-align: left;
+	}
+	
+	@media only screen and (min-width : 1200px) {
+		font-size: 72px;
+		letter-spacing: 4.3px;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media only screen and (min-width : 1600px) {
+		font-size: 90px;
+	}
+}
+
+.slogan__left {
+	position: relative;
+	z-index: 2;
+
+	@media only screen and (min-width : 1200px) {
+		z-index: 3;
+	}
+}
+
+.slogan__line {
+	position: absolute;
+	top: 172px;
+	left: 85px;
+	height: 177px;
+	z-index: 0;
+	
+	@media only screen and (min-width : 768px) {
+		height: auto;
+		top: 226px;
+		left: 259px;
+		z-index: 1;
+	}
+	
+	@media only screen and (min-width : 1200px) {
+		top: 295px;
+		left: 220px;
+		z-index: 2;
+	}
+
+	@media only screen and (min-width : 1600px) {
+		top: 302px;
+		left: 583px;
+	}
+}
+
+.slogan__right {
+	position: relative;
+	text-align: left;
+	padding-top: 17px;
+	padding-bottom: 13px;
+	padding-left: 57px;
+	line-height: 1.2;
+	
+	@media only screen and (min-width : 768px) {
+		padding-top: 8px;
+		letter-spacing: 2.9px;
+		text-align: left;
+		padding-left: 112px;
+		z-index: 2;
+		line-height: 1.2;
+	}
+
+	@media only screen and (min-width : 1200px) {
+		padding-top: 0;
+		padding-bottom: 13px;
+		letter-spacing: 4.3px;
+		text-align: right;
+		padding-left: 0;
+		z-index: 1;
+		line-height: 1;
+	}
+}

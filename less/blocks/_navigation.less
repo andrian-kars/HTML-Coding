@@ -1,0 +1,88 @@
+.nav {
+	position: absolute;
+	bottom: 14px;
+	right: 5%;
+	left: 5%;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 300;
+	
+	@media only screen and (min-width : 492px) {
+		bottom: 40px;
+	}
+
+	@media only screen and (min-width : 768px) {
+		position: static;
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 113px;
+		text-align: right;
+	}
+	
+	@media only screen and (min-width : 1200px) {
+		font-size: 14px;
+		text-align: right;
+		margin-bottom: 178px;
+	}
+}
+
+.nav__list {
+	list-style-type: none;
+
+	@media only screen and (min-width : 768px) {
+		text-align: center;
+	}
+
+	@media only screen and (min-width : 1200px) {
+		text-align: right;
+	}
+}
+
+.nav__item {
+	display: inline-block;
+	padding-right: 33px;
+	line-height: 1.8;
+	
+	&:nth-child(3) {
+		padding-right: 0;
+	}
+
+	@media only screen and (min-width : 375px) {
+
+		&:nth-child(3) {
+			padding-right: 33px;
+		}
+	}
+
+	@media only screen and (min-width : 768px) {
+		padding-right: 53px;
+		letter-spacing: 1px;
+		line-height: 1;
+		
+		&:nth-child(3) {
+			padding-right: 53px;
+		}
+	}
+	
+	@media only screen and (min-width : 1200px) {
+		padding-right: 51px;
+		letter-spacing: normal;
+		
+		&:nth-child(3) {
+			padding-right: 51px;
+		}
+	}
+	
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+.nav__link {
+	color: rgb(144, 113, 234);
+	
+	&:hover, &:active, &:focus {
+		color: #c1c1c1;
+	}
+}
