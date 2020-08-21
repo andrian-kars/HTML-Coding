@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Заказать экскурсию</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="icon" href="../images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicons/64.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/favicons/apple-icon.png">
+</head>
+
+<body>
+
+    <h1 id="top">Однодневная экскурсия в Гранд Каньон из Лас-Вегаса</h1>
+
+    <ul class="navigation">
+        <li><a href="index.html">Информация о экскурсии</a></li>
+        <li><a href="photos.html">Фотографии с экскурсии</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="booking.html">Забронировать место</a></li>
+    </ul>
+
+    <h2>Заказать экскурсию</h2>
+
+    <table class="price">
+        <thead>
+            <tr>
+                <td></td>
+                <th>1 человек</th>
+                <th>2 человека</th>
+                <th>3 человека</th>
+                <th>4 человека</th>
+                <th>5 человек</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>$550 за 1 человека</th>
+                <td>x1</td>
+                <td>x2</td>
+                <td>x3</td>
+                <td>x4</td>
+                <td>x5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>$550</td>
+                <td>$1100</td>
+                <td>$1650</td>
+                <td>$2200</td>
+                <td>$2750</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <form>
+
+        <label for="fio">Введите ваше Ф.И.О</label>
+        <input type="text" name="fio" id="fio" required class="fio">
+        <br><br>
+        <label for="date">Выберите дату</label>
+        <input type="date" name="date" id="date" required class="date">
+        <br><br>
+        <label for="email">Ваш Email</label>
+        <input type="email" name="email" id="email" required class="email">
+        <br><br>
+        <label for="members">Кол-во человек</label>
+        <select name="members" id="members" class="members">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <label for="tel">Ваш телефон</label>
+        <input type="text" name="tel" id="tel" required class="tel">
+        <br><br>
+        <label for="pz_text">Ваши пожелания</label>
+        <br>
+        <textarea name="pz_text" id="pz_text" class="pz_text" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Забронировать" class="submit">
+
+    </form>
+
+</body>
+
+</html>
