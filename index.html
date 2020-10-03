@@ -18,29 +18,37 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__inner">
-        <a href="#top" class="logo">
-          <picture class="logo__img">
-            <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
-            <img src="images/logo.png" alt="logo">
-          </picture>
-        </a>
+      <div id="header__nav" class="header__inner">
+        <div data-menuanchor="top">
+          <a href="#top" class="logo">
+            <picture class="logo__img">
+              <source srcset="images/logo-mobile.png" media="(max-width: 1200px)">
+              <img src="images/logo.png" alt="logo">
+            </picture>
+          </a>
+        </div>
         <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
           <ul class="menu__list">
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="products">
               <a href="#products" class="menu__list-link">О ДРОНЕ</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="benefits">
               <a href="#benefits" class="menu__list-link">ПРЕИМУЩЕСТВА</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="specification">
               <a href="#specification" class="menu__list-link">ХАРАКТЕРИСТИКИ</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="questions">
               <a href="#questions" class="menu__list-link">ВОПРОСЫ</a>
             </li>
-            <li class="menu__list-item">
+            <li class="menu__list-item" data-menuanchor="contacts">
               <a href="#contacts" class="menu__list-link">КОНТАКТЫ</a>
+            </li>
+            <li class="menu__list-phone">
+              <a class="header__phone-menu" href="tel:80505676767">8 (050) 567 67 67</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +60,7 @@
     </div>
   </header>
   <main id="fullpage">
-    <section id="top" class="page-section top">
+    <section data-anchor="top" class="page-section top">
       <div class="page-section__whrapper top__whrapper">
         <div class="container">
           <div class="top__inner">
@@ -90,7 +98,7 @@
       </div>
     </section>
 
-    <section id="products" class="page-section products">
+    <section data-anchor="products" class="page-section products">
       <div class="page-section__whrapper">
         <div class="container">
           <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -148,7 +156,7 @@
       </div>
     </section>
 
-    <section id="benefits" class="page-section benefits">
+    <section data-anchor="benefits" class="page-section benefits">
       <div class="page-section__whrapper">
         <div class="container">
           <h3 class="title">Преимущества</h3>
@@ -227,7 +235,7 @@
       </div>
     </section>
 
-    <section id="specification" class="page-section specification">
+    <section data-anchor="specification" class="page-section specification">
       <div class="page-section__whrapper">
         <div class="container">
           <h3 class="title">Характеристики</h3>
@@ -279,7 +287,7 @@
       </div>
     </section>
 
-    <section id="questions" class="page-section questions">
+    <section data-anchor="questions" class="page-section questions">
       <div class="page-section__whrapper">
         <div class="container">
           <h3 class="title">Остались вопросы?</h3>
@@ -338,7 +346,7 @@
       </div>
     </section>
 
-    <section id="contacts" class="page-section contacts">
+    <section data-anchor="contacts" class="page-section contacts">
       <div class="page-section__whrapper">
         <div class="container">
           <h3 class="title">Контакты</h3>

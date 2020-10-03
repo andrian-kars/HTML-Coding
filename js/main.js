@@ -18,9 +18,33 @@ $(function () {
         autoScrolling: true,
         scrollHorizontally: true,
         sectionSelector: '.page-section',
-        licenseKey: 'Y1'
+        licenseKey: 'Y1',
+        scrollOverflow: true,
+        menu: '#header__nav',
+        anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts']
     })
 
+    // Mobile-menu
+
+    $('.menu__btn').on('click', function () {
+        $('.menu__btn').toggleClass('menu__btn--active')
+        $('.menu__list').toggleClass('menu__list--active')
+    })
+
+    $('.menu__list-link').on('click', function () {
+        $('.menu__btn').removeClass('menu__btn--active')
+        $('.menu__list').removeClass('menu__list--active')
+    })
+
+    $('.logo').on('click', function () {
+        $('.menu__btn').removeClass('menu__btn--active')
+        $('.menu__list').removeClass('menu__list--active')
+    })
+
+    $('.header__btn').on('click', function () {
+        $('.menu__btn').removeClass('menu__btn--active')
+        $('.menu__list').removeClass('menu__list--active')
+    })
 
 
 })
