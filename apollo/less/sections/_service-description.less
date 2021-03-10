@@ -1,0 +1,71 @@
+.service-description {
+	position: relative;
+	padding-bottom: 50px;
+	
+	&--top {
+		padding-top: 40px;
+		
+		@media only screen and (min-width : 768px) {
+			padding-top: 89px;
+		}
+
+		@media only screen and (min-width : 1200px) {
+			padding-bottom: 87px;
+		}
+	}
+
+	&--bottom {
+		padding-top: 50px;
+
+		@media only screen and (min-width : 768px) {
+			padding-top: 89px;
+		}
+
+		@media only screen and (min-width : 1200px) {
+			padding-bottom: 95px;
+		}
+	}
+}
+
+
+
+.service-description__img {
+	 
+	 &--top {
+		@media only screen and (min-width : 1200px) {
+			position: absolute;
+			width: 523px;
+	    	top: -18px;
+	    	right: 96px;
+		}
+	 }
+
+	 &--bottom {
+		@media only screen and (min-width : 1200px) {
+			position: absolute;
+	    	top: -18px;
+	    	right: 58px;
+		}
+	 }
+}
+
+.service-description__text {
+	font-size: 14px;
+	color: rgb(119, 119, 119);
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	padding-bottom: 3px;
+	p {
+		margin-top: 0;
+		margin-bottom: 22px;
+	}
+}
+
+.service-description__button-arrow {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url("../images/icons/arrow-orange.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
