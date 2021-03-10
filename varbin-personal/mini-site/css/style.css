@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(207, 226, 251);
+    background-color: rgba(207, 226, 251, 0.25);
+    color: #00509E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navigation a:visited {
+    color: #0000F1;
+    text-decoration: none;
+}
+    
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000F1;
+    text-decoration: none;
+}
+
+.navigation {
+    font-size: 22px;  
+    list-style-type: none;
+}
+
+.altext {
+    text-align: center;
+}
+
+.alline {
+    background-color: #00509E;
+    height: 3px;
+}
+
+
+img {
+    border-radius: 3px;
+}
+
+.photos img {
+    height: 266px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 400px;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-color: #00509E;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+th, td {
+    height: 50px;
+}
+
+th {
+    background-color: #9BC8F9;
+}
+
+.fio {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.date {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.email {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.members {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.tel {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.submit {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
+
+.pz_text {
+    background-color: #9BC8F9;
+    border-color: #00509E;
+}
